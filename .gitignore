@@ -1,5 +1,5 @@
 node_modules
 .DS_Store
 .sass-cache
-minimal-ui.css.map
+*.css.map
 custom
