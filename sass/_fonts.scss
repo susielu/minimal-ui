@@ -1,0 +1,22 @@
+/* ----Fonts---- */
+
+body {
+  font-family: $body-font, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: $grey-dark;
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $header-font, Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+h1 { font-size: 38px; }
+h2 { font-size: 30px; }
+h3 { font-size: 22px; }
+
+button {
+  font-family: $header-font, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
