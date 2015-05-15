@@ -1,6 +1,5 @@
 /* ----UI styles---- */
 
-
 /* Tags */
 header, footer{
   padding-top: 30px;
@@ -31,14 +30,42 @@ blockquote {
 }
 
 /* Backgrounds */
-.background-dark {
+.bg-dark {
   background: $grey-dark;
   color: $white;
 }
 
-.background-light {
-  background: $grey-light;
-}
+.bg-light { background: $grey-light;}
+
+.bg-grey-light {background: $grey-light;}
+.bg-grey {background: $grey;}
+.bg-grey-dark {background: $grey-dark;}
+
+.bg-denim {background: $denim;}
+.bg-denim-light {background: $denim-light;}
+
+.bg-blue {background: $blue;}
+.bg-blue-light {background: $blue-light;}
+
+.bg-teal {background: $teal;}
+.bg-teal-light {background: $teal-light;}
+
+// .bg-cyan {background: $cyan;}
+// .bg-cyan-light {background: $cyan-light;}
+
+// .bg-pine {background: $pine;}
+// .bg-pine-light {background: $pine-light;}
+
+.bg-green {background: $green;}
+.bg-green-light {background: $green-light;}
+
+.bg-yellow {background: $yellow;}
+.bg-yellow-light {background: $yellow-light;}
+
+.bg-red {background: $red;}
+.bg-red-light {background: $red-light;}
+
+
 
 /* Buttons */
 .btn {

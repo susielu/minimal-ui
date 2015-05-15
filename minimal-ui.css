@@ -402,29 +402,74 @@ blockquote {
   border-left: 3px solid #E4E4E4; }
 
 /* Backgrounds */
-.background-dark {
+.bg-dark {
   background: #444;
   color: #fff; }
 
-.background-light {
+.bg-light {
   background: #f5f5f5; }
+
+.bg-grey-light {
+  background: #f5f5f5; }
+
+.bg-grey {
+  background: #E4E4E4; }
+
+.bg-grey-dark {
+  background: #444; }
+
+.bg-denim {
+  background: #30465C; }
+
+.bg-denim-light {
+  background: #4E7091; }
+
+.bg-blue {
+  background: #1F69B5; }
+
+.bg-blue-light {
+  background: #4D88C5; }
+
+.bg-teal {
+  background: #11AAB0; }
+
+.bg-teal-light {
+  background: #64C4C8; }
+
+.bg-green {
+  background: #3EAB65; }
+
+.bg-green-light {
+  background: #7CC295; }
+
+.bg-yellow {
+  background: #ECB72D; }
+
+.bg-yellow-light {
+  background: #F4CB63; }
+
+.bg-red {
+  background: #E55F47; }
+
+.bg-red-light {
+  background: #ED8977; }
 
 /* Buttons */
 .btn {
   font-size: 14px;
   background: none;
-  border: 2px solid #00bfa5;
+  border: 2px solid #E55F47;
   padding: 7px;
-  color: #00bfa5;
+  color: #E55F47;
   margin-right: 20px;
   outline: none; }
 
 .btn:hover {
-  background: #6BE2C4;
+  background: #ED8977;
   color: #fff; }
 
 .btn.btn-active {
-  background: #00bfa5;
+  background: #E55F47;
   color: #fff; }
 
 /* Text formatting */

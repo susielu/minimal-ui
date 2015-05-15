@@ -3,6 +3,7 @@
     <title>Minimal UI Framework</title>
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="minimal-ui.css">
+    <link rel="stylesheet" href="custom.css">
   </head>
   <body>
 
@@ -15,7 +16,7 @@
     </div>
   </header>
 
-  <section class="background-light">
+  <section class="bg-light">
     <div class="container12">
       <h2>Text</h2>
 
@@ -46,12 +47,38 @@ var j = anotherCounter;
   <section>
     <div class="container12">
       <h2>Colors</h2>
-      <button class="btn">Simple button</button>
-      <button class="btn btn-active">Active button</button>
+      <div class="column4">
+      <div><span class="square bg-grey-light"></span> .grey-light | #f5f5f5</div>
+      <div><span class="square bg-grey"></span> .grey | #E4E4E4</div>
+      <div><span class="square bg-grey-dark"></span> .grey-dark | #444</div>
+
+      </div>
+
+      <div class="column4">
+      <div><span class="square bg-denim"></span> .denim | #00bfa5</div>
+      <div><span class="square bg-denim-light"></span> .denim-light | #00bfa5</div>
+      <div><span class="square bg-blue"></span> .blue | #00bfa5</div>
+      <div><span class="square bg-blue-light"></span> .blue-light | #00bfa5</div>
+      <div><span class="square bg-teal"></span> .cyan | #00bfa5</div>
+      <div><span class="square bg-teal-light"></span> .cyan-light | #00bfa5</div>
+
+      <div><span class="square bg-yellow"></span> .yellow | #00bfa5</div>
+      <div><span class="square bg-yellow-light"></span> .yellow-light | #6BE2C4</div>
+      </div>
+
+      <div class="column4">
+      <div><span class="square bg-green"></span> .green | #00bfa5</div>
+      <div><span class="square bg-green-light"></span> .green-light | #6BE2C4</div>
+      <div><span class="square bg-red"></span> .red | #00bfa5</div>
+      <div><span class="square bg-red-light"></span> .red-light | #6BE2C4</div>
+     <!--  <div><span class="square bg-red"></span> .red | #00bfa5</div>
+      <div><span class="square bg-red-light"></span> .red-light | #6BE2C4</div> -->
+      </div>
+
     </div>
   </section>
 
-  <footer class="background-dark">
+  <footer class="bg-dark">
     <div class="container12 txt-center">
       <div class="column12">
         <p>This is the end.</p>

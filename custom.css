@@ -1,0 +1,16 @@
+/* Custom for index file */
+/*hi*/
+/* ----Settings---- */
+/* Grid */
+/* Font */
+/* UI */
+/* Colors */
+/* Set your primary color */
+.square {
+  width: 30px;
+  height: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=custom.css.map */

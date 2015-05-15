@@ -4,14 +4,15 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'minimal-ui.css' : 'sass/minimal-ui.scss'
+          'minimal-ui.css' : ['sass/minimal-ui.scss'],
+          'custom.css': 'custom/custom.scss'
         }
       }
     },
 
     watch: {
       css: {
-        files: ['sass/*.scss'],
+        files: ['sass/*.scss', 'custom/*.scss'],
         tasks: ['sass']
       }
     },
