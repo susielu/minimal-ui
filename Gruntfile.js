@@ -5,7 +5,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'minimal-ui.css' : ['sass/minimal-ui.scss'],
-          'custom.css': 'custom/custom.scss'
+          'custom/custom.css': 'custom/custom.scss'
         }
       }
     },

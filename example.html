@@ -2,8 +2,9 @@
   <head>
     <title>Minimal UI Framework</title>
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Martel:300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="minimal-ui.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="custom/custom.css">
   </head>
   <body>
 
@@ -11,66 +12,220 @@
     <div class="container12">
       <div class="column12 txt-center">
         <h1>Minimal UI Framework</h1>
-        <p>By Susie Lu</p>
+        <p>By <a href="http://www.susielu.com">Susie Lu</a></p>
+        <p>
+          Inspired by <a href="http://brutaldesign.github.io/bagpakk/">Bagpakk
+          </a> and <a href="http://www.1140px.com/">1140px</a></p>
       </div>
     </div>
   </header>
 
   <section class="bg-light">
     <div class="container12">
-      <h2>Text</h2>
+      <div class="column10 prefix1">
+        <h2 class="txt-center">Usage</h2>
+      </div>
+  </section>
 
-      <p>This is how a sentence would look</p>
+  <section>
+    <div class="container12">
+      <div class="column3 prefix1">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+      <div class="column7">
+        <h2>Text</h2>
 
-      <h3>Blockquote</h3>
-      <blockquote>
-        <p>It's not what you look at that matters, it's what you see.</p>
-        <p class="txt-subtitle">Henry David Thoreau</p>
-      </blockquote>
+        <p>This is how a sentence would look</p>
 
-      <pre><code>
-// Example code block
-var i = someCounter;
-var j = anotherCounter;
-      </code></pre>
+        <h3>Suggested Fonts</h3>
+        <p>
+          Headers use <a href="https://www.google.com/fonts/specimen/Muli">Muli.
+          </a>
+        </p>
+        <p>
+          Body text uses
+          <a href="https://www.google.com/fonts/specimen/Martel">Martel</a>.
+        </p>
+        <p>Both of theses fonts are easily added to your website using the Google
+        Fonts scripts:</p>
+        <pre><code>
+&lt;link href='http://fonts.googleapis.com/css?family=Muli:300,400'
+    rel='stylesheet' type='text/css'>
+
+&lt;link href='http://fonts.googleapis.com/css?family=Martel:300,700'
+    rel='stylesheet' type='text/css'>
+        </code></pre>
+
+        <h3>Blockquote</h3>
+        <blockquote>
+          <p>It's not what you look at that matters, it's what you see.</p>
+          <p class="txt-subtitle">Henry David Thoreau</p>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container12">
+      <div class="column5 prefix1">
+        <h2>Buttons</h2>
+        <button class="btn">Simple button</button>
+        <button class="btn btn-active">Active button</button>
+      </div>
+      <div class="column5">
+        <h2>Table</h2>
+        <table>
+          <thead>
+            <tr><th>This</th>
+            <th>That</th>
+            <th>Those</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>Other</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>Other</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="bg-dark">
+    <div class="container12">
+      <div class="column12 txt-center">
+        <h2>Grid</h2>
+        <p>
+          Using Andrzej Osmialowski's <a href="http://www.1140px.com/">1140px</a>
+           grid (only the 12 column one).
+        </p>
+      </div>
+      <div class="grid txt-center">
+        <div class="column12 bg-light">
+          <p>.column12</p>
+        </div>
+        <div class="column6 bg-light">
+          <p>.column6</p>
+        </div>
+        <div class="column6 bg-light ">
+          <p>.column6</p>
+        </div>
+        <div class="column4 bg-light">
+          <p>.column4</p>
+        </div>
+        <div class="column8 bg-light">
+          <p>.column8</p>
+        </div>
+        <div class="column2 bg-light">
+          <p>.column2</p>
+        </div>
+        <div class="column2 bg-light">
+          <p>.column2</p>
+        </div>
+        <div class="column4 bg-light">
+          <p>.column4</p>
+        </div>
+        <div class="column2 bg-light">
+          <p>.column2</p>
+        </div>
+        <div class="column2 bg-light">
+          <p>.column2</p>
+        </div>
+
+        <div class="column8 prefix2 bg-light">
+          <p>.column8 .prefix2</p>
+        </div>
+        <div class="column5 bg-light">
+          <p>.column5</p>
+        </div>
+        <div class="column7 bg-light">
+          <p>.column7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container12">
+      <div class="column5 prefix1">
+        <h2>Form</h2>
+        <form action="">
+          <p>
+            <label>Text field</label>
+            <input type="text">
+          </p>
+          <p>
+            <label>Textarea</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </p>
+          <p><input type="submit" value="Submit"></p>
+        </form>
+      </div>
+      <div class="column5">
+        <br />
+        <form action="">
+          <p>
+            <label>Your Choice</label>
+            <select>
+              <option>Select an option</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </p>
+          <p>
+            <label><input type="checkbox">
+            Check it</label>
+          </p>
+          <p>
+            <label><input type="radio">
+            Check it</label>
+          </p>
+        </form>
+      </div>
     </div>
   </section>
 
   <section>
     <div class="container12">
-      <h2>Buttons</h2>
-      <button class="btn">Simple button</button>
-      <button class="btn btn-active">Active button</button>
-    </div>
-  </section>
-
-  <section>
-    <div class="container12">
-      <h2>Colors</h2>
-      <div class="column4">
-      <div><span class="square bg-grey-light"></span> .grey-light | #f5f5f5</div>
-      <div><span class="square bg-grey"></span> .grey | #E4E4E4</div>
-      <div><span class="square bg-grey-dark"></span> .grey-dark | #444</div>
+      <h2 class="txt-center">Colors</h2>
+      <div class="column3 prefix2">
+      <div><span class="square bg-grey-light"></span> .grey-light </div>
+      <div><span class="square bg-grey"></span> .grey </div>
+      <div><span class="square bg-grey-dark"></span> .grey-dark</div>
 
       </div>
 
-      <div class="column4">
-      <div><span class="square bg-denim"></span> .denim | #00bfa5</div>
-      <div><span class="square bg-denim-light"></span> .denim-light | #00bfa5</div>
-      <div><span class="square bg-blue"></span> .blue | #00bfa5</div>
-      <div><span class="square bg-blue-light"></span> .blue-light | #00bfa5</div>
-      <div><span class="square bg-teal"></span> .cyan | #00bfa5</div>
-      <div><span class="square bg-teal-light"></span> .cyan-light | #00bfa5</div>
+      <div class="column3">
+      <div><span class="square bg-denim"></span> .denim</div>
+      <div><span class="square bg-denim-light"></span> .denim-light</div>
+      <div><span class="square bg-blue"></span> .blue</div>
+      <div><span class="square bg-blue-light"></span> .blue-light</div>
+      <div><span class="square bg-teal"></span> .teal</div>
+      <div><span class="square bg-teal-light"></span> .teal-light</div>
 
-      <div><span class="square bg-yellow"></span> .yellow | #00bfa5</div>
-      <div><span class="square bg-yellow-light"></span> .yellow-light | #6BE2C4</div>
+      <div><span class="square bg-yellow"></span> .yellow</div>
+      <div><span class="square bg-yellow-light"></span> .yellow-light</div>
       </div>
 
-      <div class="column4">
-      <div><span class="square bg-green"></span> .green | #00bfa5</div>
-      <div><span class="square bg-green-light"></span> .green-light | #6BE2C4</div>
-      <div><span class="square bg-red"></span> .red | #00bfa5</div>
-      <div><span class="square bg-red-light"></span> .red-light | #6BE2C4</div>
+      <div class="column3">
+      <div><span class="square bg-green"></span> .green</div>
+      <div><span class="square bg-green-light"></span> .green-light</div>
+      <div><span class="square bg-red"></span> .red</div>
+      <div><span class="square bg-red-light"></span> .red-light</div>
      <!--  <div><span class="square bg-red"></span> .red | #00bfa5</div>
       <div><span class="square bg-red-light"></span> .red-light | #6BE2C4</div> -->
       </div>
@@ -81,7 +236,7 @@ var j = anotherCounter;
   <footer class="bg-dark">
     <div class="container12 txt-center">
       <div class="column12">
-        <p>This is the end.</p>
+        <p>Fini.</p>
       </div>
     </div>
   </footer>
