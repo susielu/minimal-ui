@@ -1,0 +1,19 @@
+/* Custom for index file */
+/*hi*/
+@import "../sass/settings";
+
+.grid {
+  & > div{
+    font-family: $header-font;
+    margin-bottom: 20px;
+  }
+
+}
+
+.square {
+  width: 30px;
+  height: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
