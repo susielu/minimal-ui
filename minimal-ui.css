@@ -468,6 +468,52 @@ blockquote {
 .bg-red-light {
   background: #ED8977; }
 
+/* Colors */
+.cl-grey-light {
+  color: #f5f5f5; }
+
+.cl-grey {
+  color: #E4E4E4; }
+
+.cl-grey-dark {
+  color: #444; }
+
+.cl-denim {
+  color: #30465C; }
+
+.cl-denim-light {
+  color: #4E7091; }
+
+.cl-blue {
+  color: #1F69B5; }
+
+.cl-blue-light {
+  color: #4D88C5; }
+
+.cl-teal {
+  color: #11AAB0; }
+
+.cl-teal-light {
+  color: #64C4C8; }
+
+.cl-green {
+  color: #3EAB65; }
+
+.cl-green-light {
+  color: #7CC295; }
+
+.cl-yellow {
+  color: #ECB72D; }
+
+.cl-yellow-light {
+  color: #F4CB63; }
+
+.cl-red {
+  color: #E55F47; }
+
+.cl-red-light {
+  color: #ED8977; }
+
 /* Buttons */
 .btn {
   font-size: 14px;
@@ -485,6 +531,9 @@ blockquote {
 .btn.btn-active {
   background: #1F69B5;
   color: #fff; }
+
+.btn.btn-active:hover {
+  border: 3px solid #4D88C5; }
 
 /* Text formatting */
 .txt-center {

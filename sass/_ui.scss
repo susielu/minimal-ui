@@ -80,6 +80,29 @@ blockquote {
 .bg-red-light {background: $red-light;}
 
 
+/* Colors */
+.cl-grey-light {color: $grey-light;}
+.cl-grey {color: $grey;}
+.cl-grey-dark {color: $grey-dark;}
+
+.cl-denim {color: $denim;}
+.cl-denim-light {color: $denim-light;}
+
+.cl-blue {color: $blue;}
+.cl-blue-light {color: $blue-light;}
+
+.cl-teal {color: $teal;}
+.cl-teal-light {color: $teal-light;}
+
+.cl-green {color: $green;}
+.cl-green-light {color: $green-light;}
+
+.cl-yellow {color: $yellow;}
+.cl-yellow-light {color: $yellow-light;}
+
+.cl-red {color: $red;}
+.cl-red-light {color: $red-light;}
+
 
 /* Buttons */
 .btn {
@@ -100,6 +123,10 @@ blockquote {
 .btn.btn-active {
   background: $primary;
   color: $white;
+}
+
+.btn.btn-active:hover{
+  border: 3px solid $primary-light;
 }
 
 
