@@ -64,8 +64,11 @@ blockquote {
 /* Navigation Bar */
 .nav {
  // background: $grey;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border-bottom: 1px solid $grey;
+  border-top: 1px solid $grey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 
   a {
     text-decoration: none;
@@ -80,27 +83,22 @@ blockquote {
   }
 
   a:not(:last-child){
-    border-right: 1px solid $grey-dark;
+    border-right: 2px solid $grey;
   }
 }
 
 .nav.nav-box {
-  //background: $grey;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
+  border-top: none;
 
   a {
-    border-right: none;
+    border: 2px solid $grey;
     margin-right: 5px;
     background: $grey;
   }
-  a:first-child{
-    border-left: none;
-  }
 
   a:hover {
-
+    border: 2px solid $primary;
+    //background: $white;
   }
 }
 
@@ -119,11 +117,11 @@ table {
   border-spacing: 0px;
 
   thead th{
-    border-bottom: 2px solid $grey-dark;
+    border-bottom: 2px solid $grey-med-dark;
   }
 
   thead th:not(:last-child), tbody td:not(:last-child){
-    border-right: 1px solid $grey-dark;
+    border-right: 1px solid $grey-med-dark;
   }
 
   th, td {
@@ -132,7 +130,7 @@ table {
   }
 
   tbody tr:not(:last-child) td {
-    border-bottom: 1px solid $grey-dark;
+    border-bottom: 1px solid $grey-med-dark;
   }
 
   &.light {
@@ -152,6 +150,15 @@ table {
   }
 }
 
+/* Tags */
+.tag {
+  background: $grey;
+  font-size: 12px;
+  padding: 3px 5px 3px 5px;
+  border: 1px solid $grey-med-dark;
+  border-radius: 10px;
+}
+
 /* Backgrounds */
 .bg-dark {
   background: $grey-dark;
@@ -164,6 +171,7 @@ table {
 
 .bg-grey-light {background: $grey-light;}
 .bg-grey {background: $grey;}
+.bg-grey-med-dark {background: $grey-med-dark;}
 .bg-grey-dark {background: $grey-dark;}
 
 .bg-denim {background: $denim;}
@@ -188,6 +196,7 @@ table {
 /* Colors */
 .cl-grey-light {color: $grey-light;}
 .cl-grey {color: $grey;}
+.cl-grey-med-dark {color: $grey-med-dark;}
 .cl-grey-dark {color: $grey-dark;}
 
 .cl-denim {color: $denim;}
@@ -234,7 +243,7 @@ select, .btn.btn-active {
 }
 
  .btn.btn-active:hover{
-  border: 3px solid $primary-light;
+  border: 2px solid $primary-light;
 }
 
 

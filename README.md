@@ -13,5 +13,4 @@
 - Colors
 
 ## To dos:
-- Add in .tag styling
 - Determine the best way to use this code

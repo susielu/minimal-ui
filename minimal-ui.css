@@ -400,9 +400,9 @@ p {
   margin-top: 5px; }
 
 a {
-  color: #1F69B5; }
+  color: #11AAB0; }
   .bg-dark a {
-    color: #4D88C5; }
+    color: #64C4C8; }
 
 hr {
   border: 0;
@@ -425,8 +425,11 @@ blockquote {
 
 /* Navigation Bar */
 .nav {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  border-bottom: 1px solid #E4E4E4;
+  border-top: 1px solid #E4E4E4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
   .nav a {
     text-decoration: none;
     padding: 5px 15px 5px 10px;
@@ -434,19 +437,18 @@ blockquote {
     color: #444;
     font-size: 18px; }
   .nav a:hover {
-    color: #1F69B5; }
+    color: #11AAB0; }
   .nav a:not(:last-child) {
-    border-right: 1px solid #444; }
+    border-right: 2px solid #E4E4E4; }
 
 .nav.nav-box {
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  border-top: none; }
   .nav.nav-box a {
-    border-right: none;
+    border: 2px solid #E4E4E4;
     margin-right: 5px;
     background: #E4E4E4; }
-  .nav.nav-box a:first-child {
-    border-left: none; }
+  .nav.nav-box a:hover {
+    border: 2px solid #11AAB0; }
 
 /* Forms */
 textarea, button, option, optgroup, fieldset, label {
@@ -459,14 +461,14 @@ label {
 table {
   border-spacing: 0px; }
   table thead th {
-    border-bottom: 2px solid #444; }
+    border-bottom: 2px solid #999; }
   table thead th:not(:last-child), table tbody td:not(:last-child) {
-    border-right: 1px solid #444; }
+    border-right: 1px solid #999; }
   table th, table td {
     padding-left: 10px;
     padding-right: 10px; }
   table tbody tr:not(:last-child) td {
-    border-bottom: 1px solid #444; }
+    border-bottom: 1px solid #999; }
   table.light {
     color: #fff; }
     table.light thead th {
@@ -475,6 +477,14 @@ table {
       border-right: 1px solid #fff; }
     table.light tbody tr:not(:last-child) td {
       border-bottom: 1px solid #fff; }
+
+/* Tags */
+.tag {
+  background: #E4E4E4;
+  font-size: 12px;
+  padding: 3px 5px 3px 5px;
+  border: 1px solid #999;
+  border-radius: 10px; }
 
 /* Backgrounds */
 .bg-dark {
@@ -491,6 +501,9 @@ table {
 .bg-grey {
   background: #E4E4E4; }
 
+.bg-grey-med-dark {
+  background: #999; }
+
 .bg-grey-dark {
   background: #444; }
 
@@ -501,10 +514,10 @@ table {
   background: #4E7091; }
 
 .bg-blue {
-  background: #1F69B5; }
+  background: #1D5BCD; }
 
 .bg-blue-light {
-  background: #4D88C5; }
+  background: #5A87DA; }
 
 .bg-teal {
   background: #11AAB0; }
@@ -537,6 +550,9 @@ table {
 .cl-grey {
   color: #E4E4E4; }
 
+.cl-grey-med-dark {
+  color: #999; }
+
 .cl-grey-dark {
   color: #444; }
 
@@ -547,10 +563,10 @@ table {
   color: #4E7091; }
 
 .cl-blue {
-  color: #1F69B5; }
+  color: #1D5BCD; }
 
 .cl-blue-light {
-  color: #4D88C5; }
+  color: #5A87DA; }
 
 .cl-teal {
   color: #11AAB0; }
@@ -580,9 +596,9 @@ table {
 button, input[type="submit"], select, option, .btn {
   font-size: 14px;
   background: none;
-  border: 2px solid #1F69B5;
+  border: 2px solid #11AAB0;
   padding: 7px;
-  color: #1F69B5;
+  color: #11AAB0;
   margin-right: 20px;
   outline: none;
   border-radius: 0px;
@@ -590,15 +606,15 @@ button, input[type="submit"], select, option, .btn {
   -webkit-border-radius: 0px; }
 
 .btn:hover, input[type="submit"]:hover {
-  background: #4D88C5;
+  background: #64C4C8;
   color: #fff; }
 
 select, .btn.btn-active {
-  background: #1F69B5;
+  background: #11AAB0;
   color: #fff; }
 
 .btn.btn-active:hover {
-  border: 3px solid #4D88C5; }
+  border: 2px solid #64C4C8; }
 
 /* Text formatting */
 .txt-center {
