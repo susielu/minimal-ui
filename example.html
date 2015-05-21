@@ -12,24 +12,34 @@
 
   <header>
     <div class="container12">
-      <div class="column12 txt-center">
-        <h1>Minimal UI Framework</h1>
-        <p>By <a href="http://www.susielu.com">Susie Lu</a></p>
-        <p>
-          Inspired by <a href="http://brutaldesign.github.io/bagpakk/">Bagpakk
-          </a> and <a href="http://www.1140px.com/">1140px</a></p>
+      <div class="txt-center">
+        <h1 class="column12">Minimal UI Framework</h1>
+        <nav class="column12 nav nav-box">
+            <a href="#usage">Usage</a>
+            <a href="#text">Text</a>
+            <a href="#btnsAndTables">Buttons and Tables</a>
+            <a href="#grid">Grid</a>
+        </nav>
+        <div class="column12">
+          <p>By <a href="http://www.susielu.com">Susie Lu</a></p>
+          <small>
+            Inspired by <a href="http://brutaldesign.github.io/bagpakk/">Bagpakk
+            </a> and <a href="http://www.1140px.com/">1140px</a>
+          </small>
+        </div>
       </div>
     </div>
+
   </header>
 
-  <section class="bg-light">
+  <section class="bg-light" id="usage">
     <div class="container12">
       <div class="column10 prefix1">
         <h2 class="txt-center">Usage</h2>
       </div>
   </section>
 
-  <section>
+  <section id="text">
     <div class="container12">
       <div class="column3 prefix1">
         <h1>Heading 1</h1>
@@ -72,12 +82,15 @@
     </div>
   </section>
 
-  <section class="bg-light">
+  <section class="bg-light" id="btnsAndTables">
     <div class="container12">
       <div class="column5 prefix1">
         <h2>Buttons</h2>
         <button class="btn">Simple button</button>
         <button class="btn btn-active">Active button</button>
+        <h2>Tags</h2>
+        <p class="tag">first</p>
+        <p class="tag">active</p>
       </div>
       <div class="column5">
         <h2>Table</h2>
@@ -104,9 +117,7 @@
     </div>
   </section>
 
-
-
-  <section class="bg-dark">
+  <section class="bg-dark" id="grid">
     <div class="container12">
       <div class="column12 txt-center">
         <h2>Grid</h2>

@@ -1,9 +1,23 @@
 /* ----UI styles---- */
 
 /* Tags */
+
+html {
+  overflow-y: scroll;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
 header, footer{
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+small {
+  font-size: 12px;
 }
 
 section {
@@ -45,6 +59,97 @@ blockquote {
   padding: 10px 20px 10px 20px;
   border-left: 3px solid $grey;
   //background: $grey-light;
+}
+
+/* Navigation Bar */
+.nav {
+ // background: $grey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  a {
+    text-decoration: none;
+    padding: 5px 15px 5px 10px;
+    margin-left: 0;
+    color: $grey-dark;
+    font-size: 18px;
+  }
+
+  a:hover {
+    color: $primary;
+  }
+
+  a:not(:last-child){
+    border-right: 1px solid $grey-dark;
+  }
+}
+
+.nav.nav-box {
+  //background: $grey;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+
+  a {
+    border-right: none;
+    margin-right: 5px;
+    background: $grey;
+  }
+  a:first-child{
+    border-left: none;
+  }
+
+  a:hover {
+
+  }
+}
+
+/* Forms */
+textarea, button, option, optgroup, fieldset, label{
+    vertical-align: middle;
+}
+
+label{
+  margin-right: 15px;
+}
+
+/* Tables */
+
+table {
+  border-spacing: 0px;
+
+  thead th{
+    border-bottom: 2px solid $grey-dark;
+  }
+
+  thead th:not(:last-child), tbody td:not(:last-child){
+    border-right: 1px solid $grey-dark;
+  }
+
+  th, td {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  tbody tr:not(:last-child) td {
+    border-bottom: 1px solid $grey-dark;
+  }
+
+  &.light {
+    color: $white;
+
+    thead th{
+      border-bottom: 2px solid $white;
+    }
+
+    thead th:not(:last-child), tbody td:not(:last-child){
+      border-right: 1px solid $white;
+    }
+
+    tbody tr:not(:last-child) td {
+      border-bottom: 1px solid $white;
+    }
+  }
 }
 
 /* Backgrounds */
@@ -105,7 +210,7 @@ blockquote {
 
 
 /* Buttons */
-.btn {
+button, input[type="submit"], select, option, .btn {
   font-size: 14px;
   background: none;
   border: 2px solid $primary;
@@ -113,19 +218,22 @@ blockquote {
   color: $primary;
   margin-right: 20px;
   outline: none;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
 }
 
-.btn:hover {
+.btn:hover, input[type="submit"]:hover {
   background: $primary-light;
   color: $white;
 }
 
-.btn.btn-active {
+select, .btn.btn-active {
   background: $primary;
   color: $white;
 }
 
-.btn.btn-active:hover{
+ .btn.btn-active:hover{
   border: 3px solid $primary-light;
 }
 

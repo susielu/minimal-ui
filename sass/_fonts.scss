@@ -6,10 +6,8 @@ body {
   font-size: 16px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, button, select, input, textarea, nav, .nav {
   font-family: $header-font, Arial, Helvetica, sans-serif;
-  padding-top: 30px;
-  padding-bottom: 15px;
 }
 
 h1 { font-size: 38px; }
