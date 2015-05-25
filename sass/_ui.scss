@@ -76,6 +76,8 @@ blockquote {
     margin-left: 0;
     color: $grey-dark;
     font-size: 18px;
+    white-space: nowrap;
+    line-height: 45px;
   }
 
   a:hover {

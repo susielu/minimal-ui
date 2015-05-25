@@ -435,7 +435,9 @@ blockquote {
     padding: 5px 15px 5px 10px;
     margin-left: 0;
     color: #444;
-    font-size: 18px; }
+    font-size: 18px;
+    white-space: nowrap;
+    line-height: 45px; }
   .nav a:hover {
     color: #11AAB0; }
   .nav a:not(:last-child) {

@@ -4,15 +4,14 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'minimal-ui.css' : ['sass/minimal-ui.scss'],
-          'custom/custom.css': 'custom/custom.scss'
+          'minimal-ui.css' : ['sass/minimal-ui.scss']
         }
       }
     },
 
     watch: {
       css: {
-        files: ['sass/*.scss', 'custom/*.scss'],
+        files: ['sass/*.scss'],
         tasks: ['sass', 'cssmin']
       }
     },
@@ -36,7 +35,4 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.registerTask('default',['watch']);
-  grunt.registerTask('min',['cssmin']);
-
-
 };
