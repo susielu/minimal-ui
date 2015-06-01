@@ -23,7 +23,7 @@
   <body>
 
   <header>
-    <div class="container12">
+    <div class="container">
       <div class="txt-center">
         <h1 class="column12">Minimal UI Framework</h1>
         <nav class="column12 nav nav-box">
@@ -46,14 +46,14 @@
   </header>
 
   <section class="bg-light" id="usage">
-    <div class="container12">
+    <div class="container">
       <div class="column10 prefix1">
         <h2 class="txt-center">Usage</h2>
       </div>
   </section>
 
   <section id="nav">
-    <div class="container12">
+    <div class="container">
       <div class="column10 prefix1 txt-center">
         <h2>Navigation Bars</h2>
 
@@ -81,7 +81,7 @@
   </section>
 
   <section id="text">
-    <div class="container12">
+    <div class="container">
       <div class="column3 prefix1">
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
@@ -124,7 +124,7 @@
   </section>
 
   <section class="bg-light" id="btnsAndTables">
-    <div class="container12">
+    <div class="container">
       <div class="column5 prefix1">
         <h2>Buttons</h2>
         <button class="btn">Simple button</button>
@@ -159,7 +159,7 @@
   </section>
 
   <section class="bg-dark" id="grid">
-    <div class="container12">
+    <div class="container">
       <div class="column12 txt-center">
         <h2>Grid</h2>
         <p>
@@ -213,7 +213,7 @@
   </section>
 
   <section class="bg-light">
-    <div class="container12">
+    <div class="container">
       <div class="column5 prefix1">
         <h2>Form</h2>
         <form action="">
@@ -254,7 +254,7 @@
   </section>
 
   <section>
-    <div class="container12">
+    <div class="container">
       <h2 class="txt-center">Colors</h2>
       <div class="column3 prefix2">
       <div><span class="square bg-grey-light"></span> .grey-light </div>
@@ -287,8 +287,64 @@
     </div>
   </section>
 
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="txt-center">Graphs</h2>
+      <div class="column8 prefix2">
+        <h3>SVG Elements</h3>
+        <svg>
+          <circle r="10" cx="30" cy="30"></circle>
+
+          <circle class="outline" r="10" cx="30" cy="60"></circle>
+
+          <rect width="30" height="20" x="60" y="20"></rect>
+
+          <rect class="outline" width="30" height="20" x="60" y="50"></rect>
+          <!-- TODO: need to find the right attributes-->
+          <line x1="110" y1="20" x2="110" y2="70"/>
+          <line class="line-light" x1="130" y1="20" x2="130" y2="70"/>
+
+          <text x="150" y="35">Hello</text>
+          <path d="M160 45 L150 70 L170 70 Z" ></path>
+          <path d="M185 45 L175 70 L195 70 Z" ></path>
+
+          <!-- more types to add
+          -polyline
+          -polyshape?
+          -path
+          - -->
+        </svg>
+
+        <h3>Color Schemes</h3>
+        <p>Categorical</p>
+        <div><span class="square bg-blue"></span> .g-blue</div>
+        <div><span class="square bg-blue"></span> .g-blue</div>
+        <div><span class="square bg-blue"></span> .g-blue</div>
+        <div><span class="square bg-blue"></span> .g-blue</div>
+        <div><span class="square bg-red"></span> .g-red</div>
+
+        <p>Gradient</p>
+
+
+        <p>Divergent</p>
+
+
+        <p>Use ColorBrewer for more variations and examples</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="column8 prefix2">
+      <h2>Interactive Components</h2>
+      <p>If you want to use the components in this section, you need to include the <a>js file</a> as well as the <a>css file</a>. All other components on the page only require the css file.</p>
+      </div>
+    </div>
+  </section>
+
   <footer class="bg-dark">
-    <div class="container12 txt-center">
+    <div class="container txt-center">
       <div class="column12">
         <p>Fini.</p>
       </div>

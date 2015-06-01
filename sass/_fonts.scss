@@ -4,10 +4,12 @@ body {
   font-family: $body-font, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: $grey-dark;
   font-size: 16px;
+  line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6, button, select, input, textarea, nav, .nav {
-  font-family: $header-font, Arial, Helvetica, sans-serif;
+h1,h2,h3,h4,h5,h6, button, select, input, textarea, nav, .nav, svg text {
+ // font-family: $header-font, Arial, Helvetica, sans-serif;
+  font-family: Gotham, Avenir Next, Arial, sans-serif;
 }
 
 h1 { font-size: 38px; }
@@ -15,6 +17,5 @@ h2 { font-size: 30px; }
 h3 { font-size: 22px; }
 
 button {
-  font-family: $header-font, Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
