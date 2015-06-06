@@ -51,8 +51,13 @@ a:hover {
 hr {
   border: 0;
   border-top: 1px solid $grey;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+ul {
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 pre {
@@ -61,6 +66,14 @@ pre {
   padding: 10px 15px 10px 15px;
   font-size: 14px;
   word-wrap: break-word;
+}
+
+.bg-dark code {
+  color: $grey;
+}
+
+pre code {
+  color: $grey-dark;
 }
 
 blockquote {
@@ -111,13 +124,13 @@ blockquote {
 
   a:hover {
     border: 2px solid $primary;
-    //background: $white;
   }
 }
 
 /* Forms */
 textarea, button, option, optgroup, fieldset, label{
     vertical-align: middle;
+    margin-bottom: 5px;
 }
 
 label{
@@ -259,6 +272,14 @@ select, .btn.btn-active {
   border: 2px solid $primary-light;
 }
 
+/* Alignment */
+.fl-right {
+  float: right;
+}
+
+.fl-left {
+  float: left;
+}
 
 /* Text formatting */
 

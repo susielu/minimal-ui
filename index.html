@@ -4,7 +4,7 @@
     <meta name="author" content="Susie Lu">
 
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Martel:300,700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="minimal-ui.min.css">
     <style>
       .grid > div {
@@ -32,6 +32,9 @@
             <a href="#text">Text</a>
             <a href="#btnsAndTables">Buttons and Tables</a>
             <a href="#grid">Grid</a>
+            <a href="#forms">Forms</a>
+            <a href="#colors">Colors</a>
+            <a href="#graphs">Graphs</a>
         </nav>
         <div class="column12">
           <p>By <a href="http://www.susielu.com">Susie Lu</a></p>
@@ -47,8 +50,16 @@
 
   <section class="bg-light" id="usage">
     <div class="container">
-      <div class="column10 prefix1">
+      <div class="column4 prefix4">
         <h2 class="txt-center">Usage</h2>
+        <p>You can simply add the css to your website:</p>
+        <ul>
+          <li><a href="https://raw.githubusercontent.com/susielu/minimal-ui/master/minimal-ui.min.css">Minified css</a></li>
+          <li><a href="https://raw.githubusercontent.com/susielu/minimal-ui/master/minimal-ui.css">Human-readable css</a></li>
+        </ul>
+
+        <p>Sass users:</p>
+        <p>The full sass files are available on <a href="https://github.com/susielu/minimal-ui">github</a>. I am a big fan of <a href="http://gruntjs.com/">Grunt</a>, feel free to refuse the relevant Sass tasks in the repository's <a href="https://github.com/susielu/minimal-ui/blob/master/Gruntfile.js">Gruntfile.js</a>.</p>
       </div>
   </section>
 
@@ -97,7 +108,7 @@
 
         <h3>Suggested Fonts</h3>
         <p>
-          Headers use <a href="https://www.google.com/fonts/specimen/Muli">Muli.
+          Headers use <a href="https://www.google.com/fonts/specimen/Montserrat">Montserrat.
           </a>
         </p>
         <p>
@@ -107,8 +118,7 @@
         <p>Both of theses fonts are easily added to your website using the Google
         Fonts scripts:</p>
         <pre><code>
-&lt;link href='http://fonts.googleapis.com/css?family=Muli:300,400'
-    rel='stylesheet' type='text/css'>
+&lt;link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 &lt;link href='http://fonts.googleapis.com/css?family=Martel:300,700'
     rel='stylesheet' type='text/css'>
@@ -119,6 +129,7 @@
           <p>It's not what you look at that matters, it's what you see.</p>
           <p class="txt-subtitle">Henry David Thoreau</p>
         </blockquote>
+        <p>The blockquote above is achieved with the <code>blockquote</code> html tag and a <code>.txt-subtitle</code> class for the citation.</p>
       </div>
     </div>
   </section>
@@ -127,14 +138,17 @@
     <div class="container">
       <div class="column5 prefix1">
         <h2>Buttons</h2>
+        <p>The outlined button on the left is achieved by using the <code>.btn</code> class, the active button on the right uses both <code>.btn .active</code> classes.</p>
         <button class="btn">Simple button</button>
         <button class="btn btn-active">Active button</button>
         <h2>Tags</h2>
+        <p>Style elements like tags with the <code>.tag</code> class.</p>
         <span class="tag">first</span>
         <span class="tag">active</span>
       </div>
       <div class="column5">
         <h2>Table</h2>
+        <p>This is the default styling for tables, no additional classes necessary.</p>
         <table>
           <thead>
             <tr><th>This</th>
@@ -166,6 +180,7 @@
           Using Andrzej Osmialowski's <a href="http://www.1140px.com/">1140px</a>
            grid (only the 12 column one).
         </p>
+        <p>To use the grid, you must have an outer div with the <code>.container</code> class.
       </div>
       <div class="grid txt-center">
         <div class="column12 bg-light">
@@ -212,10 +227,11 @@
     </div>
   </section>
 
-  <section class="bg-light">
+  <section class="bg-light" id="forms">
     <div class="container">
+      <h2 class="txt-center">Forms</h2>
       <div class="column5 prefix1">
-        <h2>Form</h2>
+
         <form action="">
           <p>
             <label>Text field</label>
@@ -253,45 +269,49 @@
     </div>
   </section>
 
-  <section>
+  <section id="colors">
     <div class="container">
       <h2 class="txt-center">Colors</h2>
+      <div class="column6 prefix3">
+        <p>To use these colors in your website append either <code>.bg-</code> such as <code class="bg-grey">.bg-grey</code> to use it as a background color property, or <code>.cl-</code> such as <code class="cl-blue">.cl-blue</code> to use it as the color property.</p>
+        <hr/>
+      </div>
+
       <div class="column3 prefix2">
-      <div><span class="square bg-grey-light"></span> .grey-light </div>
-      <div><span class="square bg-grey"></span> .grey </div>
-      <div><span class="square bg-grey-dark"></span> .grey-dark</div>
+      <div><span class="square bg-grey-light"></span>grey-light </div>
+      <div><span class="square bg-grey"></span>grey </div>
+      <div><span class="square bg-grey-dark"></span>grey-dark</div>
 
       </div>
 
       <div class="column3">
-      <div><span class="square bg-denim"></span> .denim</div>
-      <div><span class="square bg-denim-light"></span> .denim-light</div>
-      <div><span class="square bg-blue"></span> .blue</div>
-      <div><span class="square bg-blue-light"></span> .blue-light</div>
-      <div><span class="square bg-teal"></span> .teal</div>
-      <div><span class="square bg-teal-light"></span> .teal-light</div>
+      <div><span class="square bg-denim"></span>denim</div>
+      <div><span class="square bg-denim-light"></span>denim-light</div>
+      <div><span class="square bg-blue"></span>blue</div>
+      <div><span class="square bg-blue-light"></span>blue-light</div>
+      <div><span class="square bg-teal"></span>teal</div>
+      <div><span class="square bg-teal-light"></span>teal-light</div>
 
-      <div><span class="square bg-yellow"></span> .yellow</div>
-      <div><span class="square bg-yellow-light"></span> .yellow-light</div>
+      <div><span class="square bg-yellow"></span>yellow</div>
+      <div><span class="square bg-yellow-light"></span>yellow-light</div>
       </div>
 
       <div class="column3">
-      <div><span class="square bg-green"></span> .green</div>
-      <div><span class="square bg-green-light"></span> .green-light</div>
-      <div><span class="square bg-red"></span> .red</div>
-      <div><span class="square bg-red-light"></span> .red-light</div>
-     <!--  <div><span class="square bg-red"></span> .red | #00bfa5</div>
-      <div><span class="square bg-red-light"></span> .red-light | #6BE2C4</div> -->
+      <div><span class="square bg-green"></span>green</div>
+      <div><span class="square bg-green-light"></span>green-light</div>
+      <div><span class="square bg-red"></span>red</div>
+      <div><span class="square bg-red-light"></span>red-light</div>
       </div>
 
     </div>
   </section>
 
-  <section class="bg-light">
+  <section id="graphs" class="bg-light">
     <div class="container">
       <h2 class="txt-center">Graphs</h2>
-      <div class="column8 prefix2">
+      <div class="column6 prefix3">
         <h3>SVG Elements</h3>
+        <p>Default stying for svgs. If you are using Sass you can change the default svg colors in the _settings.scss file.</p>
         <svg>
           <circle r="10" cx="30" cy="30"></circle>
 
@@ -300,53 +320,38 @@
           <rect width="30" height="20" x="60" y="20"></rect>
 
           <rect class="outline" width="30" height="20" x="60" y="50"></rect>
-          <!-- TODO: need to find the right attributes-->
           <line x1="110" y1="20" x2="110" y2="70"/>
           <line class="line-light" x1="130" y1="20" x2="130" y2="70"/>
 
           <text x="150" y="35">Hello</text>
-          <path d="M160 45 L150 70 L170 70 Z" ></path>
-          <path d="M185 45 L175 70 L195 70 Z" ></path>
+<!--           <path d="M160 45 L150 70 L170 70 Z" ></path>
+          <path d="M185 45 L175 70 L195 70 Z" ></path> -->
 
-          <!-- more types to add
-          -polyline
-          -polyshape?
-          -path
-          - -->
         </svg>
-
-        <h3>Color Schemes</h3>
-        <p>Categorical</p>
-        <div><span class="square bg-blue"></span> .g-blue</div>
-        <div><span class="square bg-blue"></span> .g-blue</div>
-        <div><span class="square bg-blue"></span> .g-blue</div>
-        <div><span class="square bg-blue"></span> .g-blue</div>
-        <div><span class="square bg-red"></span> .g-red</div>
-
-        <p>Gradient</p>
-
-
-        <p>Divergent</p>
-
-
-        <p>Use ColorBrewer for more variations and examples</p>
       </div>
     </div>
   </section>
 
-  <section>
+ <!--  <section>
     <div class="container">
       <div class="column8 prefix2">
       <h2>Interactive Components</h2>
       <p>If you want to use the components in this section, you need to include the <a>js file</a> as well as the <a>css file</a>. All other components on the page only require the css file.</p>
       </div>
+      <div class=" column8 prefix2 bg-denim txt-white txt-center">
+      <p>A generic bar  <button class="btn fl-right">Show</button></p>
+      </div>
+      <div class="column8 prefix2 reveal-section bg-light">
+        <p> Surprise, a hidden section appeared.</p>
+
+      </div>
     </div>
-  </section>
+  </section> -->
 
   <footer class="bg-dark">
     <div class="container txt-center">
       <div class="column12">
-        <p>Fini.</p>
+        <p>More to come.</p>
       </div>
     </div>
   </footer>
