@@ -359,8 +359,7 @@ img {
 body {
   font-family: "Martel", "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: #444;
-  font-size: 16px;
-  line-height: 1.5; }
+  font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6, button, select, input, textarea, nav, .nav, svg text {
   font-family: "Montserrat", Avenir Next, Arial, Helvetica, sans-serif; }
@@ -398,8 +397,9 @@ section {
   padding-bottom: 30px; }
 
 p {
-  margin-bottom: 10px;
-  margin-top: 5px; }
+  margin-bottom: 1em;
+  margin-top: 5px;
+  line-height: 1.8; }
 
 a {
   color: #11AAB0;
@@ -446,18 +446,17 @@ blockquote {
 .nav {
   border-bottom: 1px solid #E4E4E4;
   border-top: 1px solid #E4E4E4;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 15px; }
+  padding-top: 15px; }
   .nav a {
     text-decoration: none;
     padding: 5px 15px 5px 10px;
     margin-left: 0;
+    margin-bottom: 10px;
     color: #444;
     font-size: 18px;
     white-space: nowrap;
-    line-height: 45px;
-    font-weight: 400; }
+    font-weight: 400;
+    display: inline-block; }
   .nav a:hover {
     color: #11AAB0; }
   .nav a:not(:last-child) {
@@ -495,8 +494,7 @@ table {
   table thead th:not(:last-child), table tbody td:not(:last-child) {
     border-right: 1px solid #999; }
   table th, table td {
-    padding-left: 10px;
-    padding-right: 10px; }
+    padding: 7px 10px; }
   table tbody tr:not(:last-child) td {
     border-bottom: 1px solid #999; }
   table.light {
