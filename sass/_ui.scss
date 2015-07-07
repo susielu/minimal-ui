@@ -79,7 +79,7 @@ pre code {
 blockquote {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px 20px 10px 20px;
+  padding: 0px 20px;
   border-left: 3px solid $grey;
   //background: $grey-light;
 }
@@ -124,6 +124,16 @@ blockquote {
 
   a:hover {
     border: 2px solid $primary;
+  }
+}
+
+.nav.nav-small {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  a {
+    border: none;
+    font-size: 14px;
   }
 }
 
