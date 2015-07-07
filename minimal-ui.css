@@ -359,7 +359,7 @@ img {
 body {
   font-family: "Martel", "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: #444;
-  font-size: 16px; }
+  font-size: 18px; }
 
 h1, h2, h3, h4, h5, h6, button, select, input, textarea, nav, .nav, svg text {
   font-family: "Montserrat", Avenir Next, Arial, Helvetica, sans-serif; }
@@ -472,11 +472,13 @@ blockquote {
     border: 2px solid #11AAB0; }
 
 .nav.nav-small {
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 10px; }
   .nav.nav-small a {
     border: none;
-    font-size: 14px; }
+    font-size: 14px;
+    padding: 12px 15px 5px 10px; }
 
 /* Forms */
 textarea, button, option, optgroup, fieldset, label {
@@ -542,7 +544,7 @@ table {
   background: #4E7091; }
 
 .bg-blue {
-  background: #1D5BCD; }
+  background: #3360B2; }
 
 .bg-blue-light {
   background: #5A87DA; }
@@ -591,7 +593,7 @@ table {
   color: #4E7091; }
 
 .cl-blue {
-  color: #1D5BCD; }
+  color: #3360B2; }
 
 .cl-blue-light {
   color: #5A87DA; }

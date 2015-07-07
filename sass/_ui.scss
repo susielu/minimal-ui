@@ -131,12 +131,14 @@ blockquote {
 }
 
 .nav.nav-small {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 
   a {
     border: none;
     font-size: 14px;
+    padding: 12px 15px 5px 10px;
   }
 }
 
