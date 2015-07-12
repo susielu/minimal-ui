@@ -6,8 +6,13 @@ html {
   overflow-y: scroll;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2 {
   padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+h3,h4,h5,h6 {
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 

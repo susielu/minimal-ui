@@ -357,9 +357,10 @@ img {
 
 /* ----Fonts---- */
 body {
-  font-family: "Martel", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Cardo", "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: #444;
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6, button, select, input, textarea, nav, .nav, svg text {
   font-family: "Montserrat", Avenir Next, Arial, Helvetica, sans-serif; }
@@ -382,8 +383,12 @@ code {
 html {
   overflow-y: scroll; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   padding-top: 30px;
+  padding-bottom: 15px; }
+
+h3, h4, h5, h6 {
+  padding-top: 15px;
   padding-bottom: 15px; }
 
 header, footer {
@@ -522,11 +527,11 @@ table {
   color: #fff; }
 
 .bg-light {
-  background: #f5f5f5;
+  background: #EFEFEF;
   color: #444; }
 
 .bg-grey-light {
-  background: #f5f5f5; }
+  background: #EFEFEF; }
 
 .bg-grey {
   background: #E4E4E4; }
@@ -575,7 +580,7 @@ table {
 
 /* Colors */
 .cl-grey-light {
-  color: #f5f5f5; }
+  color: #EFEFEF; }
 
 .cl-grey {
   color: #E4E4E4; }
@@ -672,26 +677,5 @@ select, .btn.btn-active {
 
 .txt-white {
   color: #fff; }
-
-svg {
-  background: white;
-  border: 1px solid #E4E4E4; }
-
-svg line {
-  stroke: #999;
-  stroke-width: 1.5px; }
-
-svg line.line-light {
-  stroke: #E4E4E4; }
-
-svg circle, svg rect {
-  fill: #11AAB0; }
-
-svg circle.outline, svg rect.outline {
-  fill: #64C4C8;
-  stroke: #11AAB0;
-  stroke-width: 1.5px; }
-
-/* TODO: add svg path, polyline, polyshape styling */
 
 /*# sourceMappingURL=minimal-ui.css.map */
