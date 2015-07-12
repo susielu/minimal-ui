@@ -1,4 +1,5 @@
 # minimal-ui
+A custom UI kit to be used in my future projects with the hopes of reducing development time and CSS overheard of other UI packages.
 
 ## Usage
 
@@ -17,7 +18,6 @@ For [Sass](http://sass-lang.com/) users, the full sass files are available in th
 - Grid
 - Form
 - Colors
-- SVG Graphs
 
 ## To dos:
 - Additional SVG elements, interactive components using JavaScript.
